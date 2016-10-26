@@ -1,0 +1,9 @@
+version: '2'
+services:
+  web:
+    build: ./spider/
+    command: sh run.sh
+    volumes:
+      - ./spider/:/code
+    ports:
+      - "7063:8000"
