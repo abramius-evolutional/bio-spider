@@ -1,1 +1,1 @@
-cron && tail -f /var/log/cron.log
+cron && ./run_spider.sh && tail -f /var/log/cron.log
